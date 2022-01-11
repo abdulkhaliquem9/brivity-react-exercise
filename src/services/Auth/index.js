@@ -11,7 +11,6 @@ export function signUp(payload, setUserInfo) {
     axios.post(URL, payload)
         .then((res) => {
             console.log('----signup res', res)
-
             setUserInfo({ isLoading: false, ...res })
 
 
